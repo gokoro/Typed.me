@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react'
+import queryString from 'query-string';
+
 import './App.css';
+import LeftSection from './components/LeftSection'
+import RightSection from './components/RightSection'
 
 function App() {
+  const [onHover, setHover] = useState(false)
+  const query = queryString.parse(document.location.search)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <a href={"https://typed.sh/author/" + query.username} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} target="_blank" rel="noopener noreferrer" className="box">
+        <LeftSection />
+        <RightSection data={query} hover={onHover}/>
+    </a>
   );
 }
 
