@@ -1,0 +1,30 @@
+.section.right {
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 0 0 0 24px;
+}
+.section.right img.profileimg {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+}
+.section.right .nickname {
+    margin-left: 24px;
+    padding-left: 24px;
+    border-left: 1.5px solid #646464;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.section.right .header.username {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+.section.right .nickname > p {
+    color: #a8a8a8;
+    font-size: 12px;
+    margin: 0;
+}

@@ -1,33 +1,13 @@
 import React from 'react'
+import './LeftSection.css'
 
-const sectionStyle = {
-    display: 'flex',
-    flexFlow: 'column nowrap',
-    alignItems: 'center',
-    flex: '0 0 100px',
-    zIndex: '5'
-}
-const brandHeaderStyle = {
-    fontSize: '16px',
-    fontWeight: '500',
-    color: '#cdcdd7',
-    marginBottom: '14px'
-}
-const brandImageStyle = {
-    width: '70px'
-}
-const imageWrapperStyle = {
-    padding: '4px',
-    marginTop: '14px',
-}
-const LeftSection = props => {
-
+const LeftSection = () => {
     return (
-        <div style={sectionStyle} className="section left">
-            <div style={imageWrapperStyle} className="imageWrapper">
-                <img style={brandImageStyle} src="/typesh.png" alt=""/>
+        <div className="section left">
+            <div className="imageWrapper">
+                <img className="img brand" src="/typesh.png" alt="Typed.sh"/>
             </div>
-            <div style={brandHeaderStyle} className="header">Typed.sh</div>
+            <div className="header brand">Typed.sh</div>
         </div>
     )
 }

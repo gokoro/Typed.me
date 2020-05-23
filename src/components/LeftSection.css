@@ -1,0 +1,20 @@
+.section.left {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex: 0 0 100px;
+    z-index: 5;
+}
+.section.left .header.brand {
+    font-size: 16px;
+    font-weight: 500;
+    color: #cdcdd7;
+    margin-bottom: 14px
+}
+.section.left img.img.brand {
+    width: 70px;
+}
+.section.left .imageWrapper {
+    padding: 4px;
+    margin-top: 14px;
+}
