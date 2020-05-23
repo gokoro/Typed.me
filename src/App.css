@@ -11,6 +11,7 @@ a, a * {
 }
 html, body, #root {
   width: fit-content;
+  overflow-y: hidden;
 }
 .box {
   display: flex;
