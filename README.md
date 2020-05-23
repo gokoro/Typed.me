@@ -1,3 +1,22 @@
+# Typed.me
+Try making your own profile widget on [Typed.sh](https://typed.sh)
+
+## How to make
+Just **easy.** Just make some customizes in the following code.
+
+```<iframe src="https://typed-widget.gokoro.me/?username=[your_username]&avatarurl=[your_image_src]" frameborder="0" style="overflow:hidden;height:100%;width:100%" ></iframe>```
+
+### Advanced mode
+1. Clone this repository and execute `yarn build` to build the application.
+2. Upload the built files on your web server.
+3. Insert the widget via `<iframe>` tag into the site you want. The querystring should be `username: your_username, avatarurl: your_image_src`
+
+Here is the result:
+
+<img style="width:70%" src="https://i.imgur.com/qF5xSFD.gif"/>
+
+---------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
